@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9189901141452310434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1311290861401530, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_Name
+      value: Patrol Toon Chicken Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.3316684
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.50899
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4303844821561524, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85a7afd24c32fd249a13c46700fe6845, type: 3}
