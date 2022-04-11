@@ -14,6 +14,8 @@ namespace Quest
         private int m_CurrentWaypointIndex;
         private void Awake()
         {
+           
+            player = FindObjectOfType<HeroMove>();
             agent = GetComponent<NavMeshAgent>();
 
         }
@@ -29,6 +31,10 @@ namespace Quest
             {
                 m_CurrentWaypointIndex = (m_CurrentWaypointIndex + 1) % waypoints.Length;
                 agent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+            }
+            else
+            {
+                agent.SetDestination(player.transform.position);
             }
         }
     }

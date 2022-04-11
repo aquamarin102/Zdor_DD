@@ -22,17 +22,19 @@ namespace Quest
         }
         private void Update()
         {
-            if (!findTarget.HasTarget) { return; }
 
-            if(!(Time.time > nextShot))
-            {
-                return;
-            }
-            
+                if (!findTarget.HasTarget) { return; }
+
+                if (!(Time.time > nextShot))
+                {
+                    return;
+                }
+
                 nextShot = Time.time + step;
-           
 
-            Shoot();
+
+                Shoot();
+
         }
 
         private void Shoot()

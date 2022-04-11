@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chicken
   - Heal
+  - Ground
   layers:
   - Default
   - TransparentFX
