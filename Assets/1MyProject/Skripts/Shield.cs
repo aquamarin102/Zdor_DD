@@ -1,15 +1,14 @@
 using UnityEngine;
-
 namespace Quest
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class BomdTur : MonoBehaviour
+    public class Shield : MonoBehaviour
     {
-        [SerializeField] private float speed = 10f;
-        [SerializeField] private float damage = 3f;
+        [SerializeField] private float speed = 30f;
+        [SerializeField] private float damage = 1f;
         [SerializeField] private float ExpPower = 1f;
         private Rigidbody rb;
-        
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
@@ -18,7 +17,7 @@ namespace Quest
 
         private void OnCollisionEnter(Collision collision)
         {
-            if(collision.gameObject.TryGetComponent(out Health health))
+            if (collision.gameObject.TryGetComponent(out Health health))
             {
                 health.Hit(damage);
             }
