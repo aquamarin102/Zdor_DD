@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Quest
 {
@@ -6,10 +7,14 @@ namespace Quest
     {
         [SerializeField] private float maxHealth = 10f;
         public float curHealth;
-
+        [SerializeField] Slider HP;
         private void Awake()
         {
             curHealth = maxHealth;
+        }
+        private void Update()
+        {
+            HP.value = curHealth;
         }
         public void Hit(float damage)
         {

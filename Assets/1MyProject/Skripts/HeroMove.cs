@@ -20,6 +20,9 @@ namespace Quest
 
         float deltaX, deltaZ;
         private CharacterController _characterController;
+
+        [SerializeField] private GameObject pausepanel;
+
         private void Start()
         {
             anim = GetComponent<Animator>();
@@ -37,7 +40,11 @@ namespace Quest
             direction *= Time.deltaTime;
             direction = transform.TransformDirection(direction);
             _characterController.Move(direction);
-
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pausepanel.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
 
         private void FixedUpdate()
