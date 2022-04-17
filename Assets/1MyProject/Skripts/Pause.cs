@@ -9,6 +9,7 @@ public class Pause : MonoBehaviour
     public void Play(int index)
     {
         SceneManager.LoadScene(index);
+        Time.timeScale = 1;
     }
     public void BTG()
     {
