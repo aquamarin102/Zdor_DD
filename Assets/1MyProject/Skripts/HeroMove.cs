@@ -2,11 +2,16 @@ using UnityEngine;
 
 namespace Quest
 {
+    [RequireComponent(typeof(AudioSource))]
     public class HeroMove : MonoBehaviour
     {
         [SerializeField] private float speed = 5f;
         [SerializeField] private float runspeed = 10f;
         [SerializeField] private float gravity = -9.8f;
+
+        [SerializeField] private AudioSource source;
+        [SerializeField] private float walkPitch = 1f;
+        [SerializeField] private float runPitch = 1.25f;
 
         private string horizontal = "Horizontal";
         private string vertical = "Vertical";
@@ -25,6 +30,7 @@ namespace Quest
 
         private void Start()
         {
+            source = GetComponent<AudioSource>();
             anim = GetComponent<Animator>();
             _characterController = GetComponent<CharacterController>();
         }
@@ -52,13 +58,17 @@ namespace Quest
 
             if (Input.GetButton(vertical) || Input.GetButton(horizontal))
             {
+                
                 anim.SetBool(isMove, true);
             }
             else
             {
                 anim.SetBool(isMove, false);
+                source.Play();
             }
             isRunning = Input.GetButton(run);
+
+            
         }
     }
 }
