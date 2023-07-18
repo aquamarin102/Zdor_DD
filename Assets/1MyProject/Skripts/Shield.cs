@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 namespace Quest
 {
@@ -5,7 +6,7 @@ namespace Quest
     public class Shield : MonoBehaviour
     {
         [SerializeField] private float speed = 30f;
-        [SerializeField] private float damage = 1f;
+        [SerializeField] private int damage = 1;
         [SerializeField] private float ExpPower = 1f;
         private Rigidbody rb;
 
@@ -26,7 +27,7 @@ namespace Quest
                 rig.AddForce(transform.up * ExpPower, ForceMode.VelocityChange);
                 rig.AddForce(transform.forward * ExpPower, ForceMode.VelocityChange);
             }
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject);
         }
 
     }

@@ -7,7 +7,7 @@ namespace Quest
     public class BomdTur : MonoBehaviour
     {
         [SerializeField] private float speed = 10f;
-        [SerializeField] private float damage = 3f;
+        [SerializeField] private int damage = 3;
         [SerializeField] private float ExpPower = 1f;
         private Rigidbody rb;
         private AudioSource boom;
@@ -22,9 +22,13 @@ namespace Quest
         private void OnCollisionEnter(Collision collision)
         {
             boom.Play();
-            if(collision.gameObject.TryGetComponent(out Health health))
+            if(collision.gameObject.TryGetComponent(out PlayerController health))
             {
                 health.Hit(damage);
+            }
+            if(collision.gameObject.TryGetComponent(out Health healthEnemy))
+            {
+                healthEnemy.Hit(damage);
             }
             if (collision.gameObject.TryGetComponent(out Rigidbody rig))
             {

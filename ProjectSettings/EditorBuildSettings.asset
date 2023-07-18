@@ -17,4 +17,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1MyProject/Scenes/Lvl Select.unity
     guid: df348b6871bb901468b4299102d2cf9e
+  - enabled: 1
+    path: Assets/1MyProject/Scenes/Multiplayer/Playfab.unity
+    guid: b6a44161d987360469842448a320e308
+  - enabled: 1
+    path: Assets/1MyProject/Scenes/Multiplayer/Lobby.unity
+    guid: eb0601a7c91bbe34e854aa1303b4f213
+  - enabled: 1
+    path: Assets/1MyProject/Scenes/FinalScene.unity
+    guid: fce766529b43f1c4f92cccd74398f09b
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
